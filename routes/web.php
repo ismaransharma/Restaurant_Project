@@ -15,3 +15,6 @@ use App\Http\Controllers\SiteController;
 */
 
 Route::get('/', [SiteController::class, 'getHome'])->name('getHome');
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
