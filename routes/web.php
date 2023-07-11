@@ -35,5 +35,8 @@ Route::prefix('admin')->group(function(){
         
         // Edit
         Route::post('edit/{slug}', [HomeController::class, 'postEditHero'])->name('postEditHero');
+
+        // Delete
+        Route::get('delete/{slug}', [HomeController::class, 'getDeleteHero'])->name('getDeleteHero');
     });
 });

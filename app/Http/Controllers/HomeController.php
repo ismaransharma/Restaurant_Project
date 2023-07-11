@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Hero;
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
+use Illuminate\Support\Carbon;
 
 class HomeController extends Controller
 {
@@ -91,7 +92,6 @@ class HomeController extends Controller
     }
 
     // Post Edit Hero
-
     public function postEditHero(Request $request, $slug){
         
         $hero = Hero::where('slug', $slug)->where('deleted_at', null)->limit(1)->first();
@@ -146,5 +146,20 @@ class HomeController extends Controller
 
         
 
+    }
+
+    // Get Delete Hero
+    public function getDeleteHero($slug)
+    {
+        $hero = Hero::where('slug', $slug)->where('deleted_at', null)->limit(1)->first();
+        if(is_null($hero)){
+            return redirect()->back()->with('error', 'Hero not found');
+        }
+        
+        $hero->deleted_at = Carbon::now();
+        $hero->save();
+        
+        return redirect()->back()->with('Success', $slug, 'Hero Section deleted successfully');
+        
     }
 }

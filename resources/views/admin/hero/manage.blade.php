@@ -74,7 +74,8 @@
                                     <td>
                                         <a href="{{ route('getEditHero', $hero->slug) }}"><button
                                                 class="btn btn-success btn-sm">Edit</button></a>
-                                        <a href=""><button class="btn btn-danger btn-sm">Delete</button></a>
+                                        <a href="{{ route('getDeleteHero', $hero->slug) }}"><button
+                                                class="btn btn-danger btn-sm">Delete</button></a>
                                     </td>
 
                                 </tr>

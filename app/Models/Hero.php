@@ -21,6 +21,6 @@ class Hero extends Model
     ];
 
     protected $casts = [
-        'deleted_at' => 'datatime',
+        'deleted_at' => 'datetime',
     ];
 }
