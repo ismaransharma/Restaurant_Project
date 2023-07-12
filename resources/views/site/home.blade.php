@@ -2,7 +2,7 @@
 @section('template')
 
 <?php
-// dd($heroes);
+// dd($AboutUs);
 ?>
 
 <!-- ======= Hero Section ======= -->
@@ -40,34 +40,26 @@
             </div>
 
             <div class="row gy-4">
-                <div class="col-lg-7 position-relative about-img" style="background-image: url('site/img/about.jpg') ;"
+                <div class="col-lg-7 position-relative about-img"
+                    style="background-image: url({{ asset('uploads/AboutUs/'. $AboutUs->about_us_image) }}) ;"
                     data-aos="fade-up" data-aos-delay="150">
                     <div class="call-us position-absolute">
                         <h4>Book a Table</h4>
-                        <p>+1 5589 55488 55</p>
+                        <p>+977 {{ $AboutUs->contact_us_number }}</p>
                     </div>
                 </div>
                 <div class="col-lg-5 d-flex align-items-end" data-aos="fade-up" data-aos-delay="300">
                     <div class="content ps-0 ps-lg-5">
                         <p class="fst-italic">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore
-                            magna aliqua.
+                            {{ $AboutUs->first_description }}
                         </p>
                         <ul>
-                            <li><i class="bi bi-check2-all"></i> Ullamco laboris nisi ut aliquip ex ea commodo
-                                consequat.</li>
-                            <li><i class="bi bi-check2-all"></i> Duis aute irure dolor in reprehenderit in voluptate
-                                velit.</li>
-                            <li><i class="bi bi-check2-all"></i> Ullamco laboris nisi ut aliquip ex ea commodo
-                                consequat. Duis aute irure dolor in reprehenderit in voluptate trideta
-                                storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+                            <li><i class="bi bi-check2-all"></i> {{ $AboutUs->first_point }} </li>
+                            <li><i class="bi bi-check2-all"></i>{{ $AboutUs->second_point }}</li>
+                            <li><i class="bi bi-check2-all"></i> {{ $AboutUs->third_point }}</li>
                         </ul>
                         <p>
-                            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                            reprehenderit in voluptate
-                            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                            proident
+                            {{ $AboutUs->last_description }}
                         </p>
 
                         <div class="position-relative mt-4">
@@ -933,7 +925,7 @@
 
             <div class="mb-3">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56607.94072142842!2d83.59616560015729!3d27.531574224853365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399424286e47a285%3A0x1a86d621db2444cf!2z4KSw4KS-4KSu4KSX4KWN4KSw4KS-4KSuIDMzMDA3!5e0!3m2!1sne!2snp!4v1688980172946!5m2!1sne!2snp"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56607.97214293905!2d83.63496711763314!3d27.531513213311964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399424286e47a285%3A0x1a86d621db2444cf!2sRamgram%2033007!5e0!3m2!1sen!2snp!4v1689138776796!5m2!1sen!2snp"
                     width="100%" height="350px" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div><!-- End Google Maps -->

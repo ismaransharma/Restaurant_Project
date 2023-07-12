@@ -17,7 +17,7 @@
                                 <h5>Hero</h5>
                             </div>
                             <div class="col-md-6 text-center">
-                                <h5 style="color: #fa6d05;">Make Active Status Minimum 1</h5>
+                                <h5 style="color: #fa6d05;">Make Sure To Active Status Minimum 1</h5>
                             </div>
                             <div class="col-md-4 text-end">
                                 <button class="btn btn-primary btn-sm" data-bs-toggle="modal"
@@ -131,6 +131,7 @@
                             @enderror
                         </div>
                         <div class="col-md-12">
+                            <label for="">Hero Image</label>
                             <input type="file" name="hero_image" id="hero_image"
                                 class="form-control @error('hero_image') is-invalid @enderror"
                                 value="{{ old('hero_image') }}" required>

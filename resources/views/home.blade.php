@@ -58,7 +58,7 @@
         </div>
 
         <div class="row">
-            <div class="col-md-4 category">
+            <div class="col-md-4 hero">
                 <div class="card">
                     <div class="card-header">
                         <h5><span>He</span>ro</h5>
@@ -67,6 +67,21 @@
                         <p>Customize Your Hero Section From Here.</p>
                         <div class="button text-center">
                             <a href="{{ route('getHeroManage') }}"><button
+                                    class="btn btn-success btn-sm">Manage</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 about-us">
+                <div class="card">
+                    <div class="card-header">
+                        <h5><span>About</span>Us</h5>
+                    </div>
+                    <div class="card-body">
+                        <p>Customize Your About Us Section From Here.</p>
+                        <div class="button text-center">
+                            <a href="{{ route('getAboutUsManage') }}"><button
                                     class="btn btn-success btn-sm">Manage</button>
                             </a>
                         </div>
