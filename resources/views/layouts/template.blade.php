@@ -120,7 +120,7 @@
                         <h4>Reservations</h4>
                         <p>
                             <strong>Phone:</strong> +1 5589 55488 55<br>
-                            <strong>Email:</strong> info@example.com<br>
+                            <strong>Email:</strong> abc@example.com<br>
                         </p>
                     </div>
                 </div>
