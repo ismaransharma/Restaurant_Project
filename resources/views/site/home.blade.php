@@ -6,6 +6,8 @@
 ?>
 
 <!-- ======= Hero Section ======= -->
+@if (is_null($heroes))
+@else
 <section id="hero" class="hero d-flex align-items-center section-bg">
     <div class="container">
         <div class="row justify-content-between gy-5">
@@ -26,11 +28,16 @@
             </div>
         </div>
     </div>
-</section><!-- End Hero Section -->
+</section>
+@endif
+<!-- End Hero Section -->
 
 <main id="main">
 
     <!-- ======= About Section ======= -->
+    @if (is_null($AboutUs))
+
+    @else
     <section id="about" class="about">
         <div class="container" data-aos="fade-up">
 
@@ -71,7 +78,9 @@
             </div>
 
         </div>
-    </section><!-- End About Section -->
+    </section>
+    @endif
+    <!-- End About Section -->
 
     <!-- ======= Why Us Section ======= -->
     <section id="why-us" class="why-us section-bg">
@@ -798,7 +807,6 @@
     <!-- ======= Book A Table Section ======= -->
     <section id="book-a-table" class="book-a-table">
         <div class="container" data-aos="fade-up">
-
             <div class="section-header">
                 <h2>Book A Table</h2>
                 <p>Book <span>Your Stay</span> With Us</p>
@@ -857,12 +865,11 @@
                         </div>
                         <div class="text-center"><button type="submit">Book a Table</button></div>
                     </form>
-                </div><!-- End Reservation Form -->
-
+                </div>
             </div>
-
         </div>
-    </section><!-- End Book A Table Section -->
+    </section>
+    <!-- End Book A Table Section -->
 
     <!-- ======= Gallery Section ======= -->
     <section id="gallery" class="gallery section-bg">

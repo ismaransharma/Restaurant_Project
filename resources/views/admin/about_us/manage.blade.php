@@ -13,13 +13,10 @@
                 <div class="card">
                     <div class="card-header">
                         <div class="row">
-                            <div class="col-md-2">
+                            <div class="col-md-6">
                                 <h5>About Us</h5>
                             </div>
-                            <div class="col-md-6 text-center">
-                                <h5 style="color: #fa6d05;">Make Sure To Active Status Minimum 1</h5>
-                            </div>
-                            <div class="col-md-4 text-end">
+                            <div class="col-md-6 text-end">
                                 <button class="btn btn-primary btn-sm" data-bs-toggle="modal"
                                     data-bs-target="#addAboutUsModal">Add About Us</button>
                             </div>

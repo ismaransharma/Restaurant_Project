@@ -47,6 +47,15 @@
                         </li>
                         @endif
                         @else
+                        <li class="nav-item">
+                            <a href="{{ route('home') }}" class="nav-link">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ route('getHeroManage') }}" class="nav-link">Hero</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ route('getAboutUsManage') }}" class="nav-link">About Us</a>
+                        </li>
                         <li class="nav-item dropdown">
                             <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
                                 data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
